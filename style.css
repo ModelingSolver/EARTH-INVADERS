@@ -48,3 +48,13 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
+
+#alien-logo {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 120px; /* adapte la taille ici si nécessaire */
+  height: auto;
+  z-index: 1000; /* s'affiche au-dessus */ 
+  /*background-color: rgba(255, 255, 255, 0.4);  blanc léger */
+}
