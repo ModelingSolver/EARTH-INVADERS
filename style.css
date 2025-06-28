@@ -53,7 +53,7 @@ p {
   position: fixed;
   top: 20px;
   left: 20px;
-  width: 60px; /* adapte la taille ici si nécessaire */
+  width: 20px; /* adapte la taille ici si nécessaire */
   height: auto;
   z-index: 1000; /* s'affiche au-dessus */ 
   /*background-color: rgba(255, 255, 255, 0.4);  blanc léger */
