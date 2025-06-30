@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEST-PAGE</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <p><a href="gameover.html">END THE GAME</a></p>
+  <iframe id="youtube-video" src="https://www.youtube.com/embed/5vyBvLvSHkU?autoplay=1&loop=1&playlist=5vyBvLvSHkU&mute=1&start=904" frameborder="0" allowfullscreen></iframe>
+  <div id="accueil">
+    <h1>GAME-TEST-GAME-TEST</h1>
+    <p></p>
+    <p></p>
+  
+    <p id="credits">ModelingSolver 2025</p>
+  </div>
+  <div class="alien-container">
+    <img src="alienhand.png\alienhand.png" alt="Main alien" class="image-bas">
+  </div>
+  <audio controls loop>
+    <source src="Silence.mp3\Disturbed - The Sound Of Silence (CYRIL Remix) [Official Audio].mp3" type="audio/mpeg">
+    Votre navigateur ne supporte pas la balise audio.
+  </audio>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+  <script src="tonScript.js"></script> 
+  <script src="tensorflow-handpose.js"></script> 
+  <script src="script.js"></script>
+  <div id="red-overlay" class="red-overlay"></div>
+
+<style>
+  .red-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+  }
+  .cow {
+    position: absolute;
+    font-size: 20px;
+  }
+  .grow {
+    transform: scale(10);
+    transition-duration: 3s;
+  }
+</style>
+
+<script>
+  function createCow() {
+    const cow = document.createElement('div');
+    cow.classList.add('cow');
+    cow.textContent = '🐮';
+    cow.style.top = `${Math.random() * (window.innerHeight - 100)}px`;
+    cow.style.left = `${Math.random() * (window.innerWidth - 100)}px`;
+    document.body.appendChild(cow);
+
+    // Faire grossir la vache
+    setTimeout(() => {
+      cow.classList.add('grow');
+      // Faire disparaître la vache après avoir atteint sa taille maximale
+      setTimeout(() => {
+        cow.remove();
+        showRedOverlay();
+      }, 1000);
+    }, 1000);
+  }
+
+  function showRedOverlay() {
+    const overlay = document.getElementById('red-overlay');
+    overlay.style.display = 'block';
+    setTimeout(() => {
+      overlay.style.display = 'none';
+    }, 200);
+  }
+
+  // Créer des vaches à des intervalles réguliers, 1sec trop rapide!!
+  setInterval(createCow, 2000);
+</script
+</body>
+</html>
