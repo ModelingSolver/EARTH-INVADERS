@@ -47,4 +47,3 @@ User Guide:
     The position of your hand, index finger, and their movements (translations and orientations) allow you to control the alien's arm movements.
 
 BE PATIENT! Stay calm, it will take some time to get the hang of it...
-Note que j'ai gardé l'essentiel du texte et ajouté les informations demandées. J'ai également traduit le texte en anglais pour que vous puissiez l'utiliser pour votre public cible.
