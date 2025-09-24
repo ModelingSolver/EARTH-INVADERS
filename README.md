@@ -13,7 +13,7 @@ Français :
     Contrôlez les bras de l'alien avec votre main via webcam.
 
 ATTENTION :
-    Configuration minimum requise : I7, 8 Go de RAM
+    Configuration minimum requise : I7, 16 Go de RAM
     Peut nécessiter une webcam de qualité
     Nécessite une bonne luminosité
 
